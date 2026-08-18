@@ -23,7 +23,7 @@ extern unsigned char*** flash_arr;
 void initFlash();
 void freeFlash();
 void eraseBlock(unsigned int block);
-void propPage(unsigned p_adr , unsigned char* data);
+void progPage(unsigned p_adr , unsigned char* data);
 void readPage(unsigned p_adr , unsigned char* data); //The caller (the function asking for the data) creates an empty buffer (a container) of the correct size where it can pass output.
 
 
